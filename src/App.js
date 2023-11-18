@@ -1,15 +1,16 @@
-import React from'react';
+import React from "react";
 import styles from "./App.module.css";
-import catImage from "./images/kitty-cat-kitten-pet-45201.jpeg";
+import PromoSlideShow from "./components/PromoSlideShow";
+import NavbarComponent from "./components/NavbarComponent";
 
 const App = () => {
-    return (
-        <div className={styles.app}>
-            <h1>Project 1</h1>
-            <p>This is the first project</p>
-            <img src={catImage} className={styles.image} alt="cat" />
-        </div>
-    );
-};                                                              
+  return (
+    <div className={styles.app}>
+      <NavbarComponent />
+      <h1 className={styles.position}>Hot Picks</h1>
+      <PromoSlideShow className={styles.app} />
+    </div>
+  );
+};
 
 export default App;
